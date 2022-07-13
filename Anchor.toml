@@ -2,14 +2,14 @@
 seeds = false
 skip-lint = false
 [programs.localnet]
-ribhfunding = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+ribhfunding = "9Hq4ESaAL4afDsw6mrqxHKKkBqgXM6RD4t8Vb45mykXy"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
-wallet = "/Users/mb/.config/solana/id.json"
+cluster = "devnet"
+wallet = "./id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
