@@ -40,7 +40,7 @@ pub mod ribhfunding {
             &ctx.accounts.liquidity_pool.key(),
             amount
         );
-        anchor_lang::solana_program::program::invoke(
+        let toto = anchor_lang::solana_program::program::invoke(
             &ix,
             &[
                 ctx.accounts.user.to_account_info(),
@@ -48,7 +48,7 @@ pub mod ribhfunding {
             ]
         );
         (&mut ctx.accounts.liquidity_pool).amount_donated += amount;
-        Ok(())
+        toto
     }
 }
 
